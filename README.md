@@ -2,7 +2,7 @@
 圆形进度条
 
 #### 使用方法
-![image](https://github.com/kuroky/CircleProgress/CircleDemo/2017-09-01 11_46_20)
+![image](https://github.com/kuroky/CircleProgress/blob/master/CircleDemo/2017-09-01-2011_46_20.gif)
 
 ```
 /**
