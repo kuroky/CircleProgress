@@ -14,6 +14,9 @@
 		5B86DE461F2C8AAF005F02C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B86DE441F2C8AAF005F02C5 /* LaunchScreen.storyboard */; };
 		5B86DE531F2C8B19005F02C5 /* EMTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B86DE511F2C8B19005F02C5 /* EMTool.m */; };
 		5B86DE561F2C8B66005F02C5 /* EMCircleLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B86DE551F2C8B66005F02C5 /* EMCircleLayerView.m */; };
+		5BDA133D1F58FF5300083DC1 /* SingleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA133C1F58FF5300083DC1 /* SingleDemoViewController.m */; };
+		5BDA13401F59014B00083DC1 /* MultiDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA133F1F59014B00083DC1 /* MultiDemoViewController.m */; };
+		5BDA13421F59016400083DC1 /* MultiDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDA13411F59016400083DC1 /* MultiDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,11 @@
 		5B86DE511F2C8B19005F02C5 /* EMTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTool.m; sourceTree = "<group>"; };
 		5B86DE541F2C8B66005F02C5 /* EMCircleLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCircleLayerView.h; sourceTree = "<group>"; };
 		5B86DE551F2C8B66005F02C5 /* EMCircleLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCircleLayerView.m; sourceTree = "<group>"; };
+		5BDA133B1F58FF5300083DC1 /* SingleDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleDemoViewController.h; sourceTree = "<group>"; };
+		5BDA133C1F58FF5300083DC1 /* SingleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleDemoViewController.m; sourceTree = "<group>"; };
+		5BDA133E1F59014B00083DC1 /* MultiDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiDemoViewController.h; sourceTree = "<group>"; };
+		5BDA133F1F59014B00083DC1 /* MultiDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiDemoViewController.m; sourceTree = "<group>"; };
+		5BDA13411F59016400083DC1 /* MultiDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,11 @@
 				5B86DE3A1F2C8AAF005F02C5 /* AppDelegate.m */,
 				5B86DE3C1F2C8AAF005F02C5 /* ViewController.h */,
 				5B86DE3D1F2C8AAF005F02C5 /* ViewController.m */,
+				5BDA133B1F58FF5300083DC1 /* SingleDemoViewController.h */,
+				5BDA133C1F58FF5300083DC1 /* SingleDemoViewController.m */,
+				5BDA133E1F59014B00083DC1 /* MultiDemoViewController.h */,
+				5BDA133F1F59014B00083DC1 /* MultiDemoViewController.m */,
+				5BDA13411F59016400083DC1 /* MultiDemoViewController.xib */,
 				5B86DE421F2C8AAF005F02C5 /* Assets.xcassets */,
 				5B86DE441F2C8AAF005F02C5 /* LaunchScreen.storyboard */,
 				5B86DE471F2C8AAF005F02C5 /* Info.plist */,
@@ -152,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDA13421F59016400083DC1 /* MultiDemoViewController.xib in Resources */,
 				5B86DE461F2C8AAF005F02C5 /* LaunchScreen.storyboard in Resources */,
 				5B86DE431F2C8AAF005F02C5 /* Assets.xcassets in Resources */,
 			);
@@ -169,6 +183,8 @@
 				5B86DE3B1F2C8AAF005F02C5 /* AppDelegate.m in Sources */,
 				5B86DE561F2C8B66005F02C5 /* EMCircleLayerView.m in Sources */,
 				5B86DE381F2C8AAF005F02C5 /* main.m in Sources */,
+				5BDA13401F59014B00083DC1 /* MultiDemoViewController.m in Sources */,
+				5BDA133D1F58FF5300083DC1 /* SingleDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +333,7 @@
 				5B86DE4C1F2C8AAF005F02C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

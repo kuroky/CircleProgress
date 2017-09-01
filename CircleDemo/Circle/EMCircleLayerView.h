@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 圆形进度条
+ */
 @interface EMCircleLayerView : UIView
 
 /**

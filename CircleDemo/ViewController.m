@@ -7,11 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "EMCircleLayerView.h"
+#import "SingleDemoViewController.h"
+#import "MultiDemoViewController.h"
 
-@interface ViewController ()
+static NSString *const  kViewControllerCell  =   @"viewControllerCell";
 
-@property (strong, nonatomic) EMCircleLayerView *circleView;
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) NSArray *dataList;
 
 @end
 
@@ -19,46 +23,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupData];
+    [self setupUI];
+}
+
+- (void)setupData {
+    self.dataList = @[@"Demo1", @"Demo2"];
+}
+
+- (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
-    CGFloat width = self.view.frame.size.width - 60;
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(30, 50, width, width)];
-    view.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:view];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds
+                                                  style:UITableViewStylePlain];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.view addSubview:self.tableView];
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(50, CGRectGetMaxY(view.frame) + 40, width - 100, 40);
-    [btn setTitle:@"继续" forState:UIControlStateNormal];
-    [btn setBackgroundColor:[UIColor lightGrayColor]];
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(didClickBtn) forControlEvents:UIControlEventTouchUpInside];
-    
-    btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(50, CGRectGetMaxY(view.frame) + 100, width - 100, 40);
-    [btn setTitle:@"还原" forState:UIControlStateNormal];
-    [btn setBackgroundColor:[UIColor lightGrayColor]];
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(didClickBtn1) forControlEvents:UIControlEventTouchUpInside];
-    
-    CGRect circleRect = view.bounds;
-    self.circleView = [[EMCircleLayerView alloc] initWithFrame:circleRect
-                                                   strokeWidth:8.0
-                                                    startAngle:45
-                                                   rotateAngle:270];
-    self.circleView.duration = 5.0;
-    self.circleView.startColor = [UIColor redColor];
-    self.circleView.strokeColor = [UIColor greenColor];
-    self.circleView.dotImageName = @"task_progressDot";
-    [view addSubview:self.circleView];
+    [self.tableView registerClass:[UITableViewCell class]
+           forCellReuseIdentifier:kViewControllerCell];
 }
 
-- (void)didClickBtn {
-    NSInteger rate = (arc4random() % 80) + 20;
-    [self.circleView strokeCircle:rate * 0.01];
+#pragma mark - UITableView DataSource
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50.0;
 }
 
-- (void)didClickBtn1 {
-    [self.circleView strokeCircle:0.001];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataList.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kViewControllerCell
+                                                            forIndexPath:indexPath];
+    cell.textLabel.text = self.dataList[indexPath.row];
+    return cell;
+}
+
+#pragma mark _ UITableView Delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *title = self.dataList[indexPath.row];
+    if ([title isEqualToString:@"Demo1"]) {
+        [self.navigationController pushViewController:[SingleDemoViewController new]
+                                             animated:YES];
+    }
+    else if ([title isEqualToString:@"Demo2"]) {
+        [self.navigationController pushViewController:[MultiDemoViewController new]
+                                             animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

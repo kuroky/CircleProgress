@@ -69,6 +69,13 @@ static CGFloat const kDefautlDuration = 5.0;
             [self.layer addSublayer:self.gradientLayer];
         }
     }
+    if (progress == 0) {
+        progress = 0.001;
+    }
+    
+    if (progress > 1) {
+        progress = 1;
+    }
     
     CGFloat duration = self.duration > 0 ? self.duration : kDefautlDuration;
     CGFloat newAngle = progress * self.deltaAngle;
@@ -138,6 +145,10 @@ static CGFloat const kDefautlDuration = 5.0;
 }
 
 - (void)setDotImageName:(NSString *)dotImageName {
+    if (!dotImageName) {
+        return;
+    }
+    
     UIImage *image = [UIImage imageNamed:dotImageName];
     if (!image) {
         return;
