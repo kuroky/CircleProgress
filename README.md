@@ -48,18 +48,22 @@
                   rotateAngle:(CGFloat)rotateAngle;
 ```
 
-####初始化
+#### 初始化
 
 ```
 EMCircleLayerView *view = [[EMCircleLayerView alloc] initWithFrame:rect
                                                            strokeWidth:10.0
                                                             startAngle:90
                                                            rotateAngle:180];
-    view.startColor = startColor;
-    view.strokeColor = strokeColor;
-    view.duration = 2.0;
-    view.dotImageName = @"task_progressDot";
-    [self addSubview:view];
+view.startColor = startColor;
+view.strokeColor = strokeColor;
+view.duration = 2.0;
+view.dotImageName = @"task_progressDot";
+[self addSubview:view];
+```
+
+```
+[view strokeCircle:0.8];
 ```
 
 
