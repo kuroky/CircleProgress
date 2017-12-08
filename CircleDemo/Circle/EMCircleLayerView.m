@@ -141,7 +141,7 @@ static CGFloat const kDefautlDuration = 5.0;
     self.progressLayer.shadowOffset = CGSizeMake(2, 2);
     self.progressLayer.shadowOpacity = 0.08;
     
-    [self.layer addSublayer:self.progressLayer];
+    //[self.layer addSublayer:self.progressLayer];
 }
 
 - (void)setDotImageName:(NSString *)dotImageName {

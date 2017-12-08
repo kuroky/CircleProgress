@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SingleDemoViewController.h"
 #import "MultiDemoViewController.h"
+#import "ProgressViewController.h"
 
 static NSString *const  kViewControllerCell  =   @"viewControllerCell";
 
@@ -28,7 +29,7 @@ static NSString *const  kViewControllerCell  =   @"viewControllerCell";
 }
 
 - (void)setupData {
-    self.dataList = @[@"Demo1", @"Demo2"];
+    self.dataList = @[@"Demo1", @"Demo2", @"Progress"];
 }
 
 - (void)setupUI {
@@ -69,6 +70,10 @@ static NSString *const  kViewControllerCell  =   @"viewControllerCell";
     }
     else if ([title isEqualToString:@"Demo2"]) {
         [self.navigationController pushViewController:[MultiDemoViewController new]
+                                             animated:YES];
+    }
+    else if ([title isEqualToString:@"Progress"]) {
+        [self.navigationController pushViewController:[ProgressViewController new]
                                              animated:YES];
     }
 }

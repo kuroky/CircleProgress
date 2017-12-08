@@ -14,6 +14,12 @@
 		5B86DE461F2C8AAF005F02C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B86DE441F2C8AAF005F02C5 /* LaunchScreen.storyboard */; };
 		5B86DE531F2C8B19005F02C5 /* EMTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B86DE511F2C8B19005F02C5 /* EMTool.m */; };
 		5B86DE561F2C8B66005F02C5 /* EMCircleLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B86DE551F2C8B66005F02C5 /* EMCircleLayerView.m */; };
+		5BAD45361FD7A6A000501A23 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD45341FD7A6A000501A23 /* ProgressViewController.m */; };
+		5BAD45371FD7A6A000501A23 /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BAD45351FD7A6A000501A23 /* ProgressViewController.xib */; };
+		5BAD453C1FD7A83500501A23 /* ProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD453A1FD7A83500501A23 /* ProgressCell.m */; };
+		5BAD453D1FD7A83500501A23 /* ProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BAD453B1FD7A83500501A23 /* ProgressCell.xib */; };
+		5BAD45411FD7C8F300501A23 /* CircleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD453F1FD7C8F300501A23 /* CircleCell.m */; };
+		5BAD45421FD7C8F300501A23 /* CircleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BAD45401FD7C8F300501A23 /* CircleCell.xib */; };
 		5BDA133D1F58FF5300083DC1 /* SingleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA133C1F58FF5300083DC1 /* SingleDemoViewController.m */; };
 		5BDA13401F59014B00083DC1 /* MultiDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA133F1F59014B00083DC1 /* MultiDemoViewController.m */; };
 		5BDA13421F59016400083DC1 /* MultiDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDA13411F59016400083DC1 /* MultiDemoViewController.xib */; };
@@ -33,6 +39,15 @@
 		5B86DE511F2C8B19005F02C5 /* EMTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMTool.m; sourceTree = "<group>"; };
 		5B86DE541F2C8B66005F02C5 /* EMCircleLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCircleLayerView.h; sourceTree = "<group>"; };
 		5B86DE551F2C8B66005F02C5 /* EMCircleLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCircleLayerView.m; sourceTree = "<group>"; };
+		5BAD45331FD7A6A000501A23 /* ProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		5BAD45341FD7A6A000501A23 /* ProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		5BAD45351FD7A6A000501A23 /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		5BAD45391FD7A83500501A23 /* ProgressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressCell.h; sourceTree = "<group>"; };
+		5BAD453A1FD7A83500501A23 /* ProgressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressCell.m; sourceTree = "<group>"; };
+		5BAD453B1FD7A83500501A23 /* ProgressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressCell.xib; sourceTree = "<group>"; };
+		5BAD453E1FD7C8F300501A23 /* CircleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleCell.h; sourceTree = "<group>"; };
+		5BAD453F1FD7C8F300501A23 /* CircleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleCell.m; sourceTree = "<group>"; };
+		5BAD45401FD7C8F300501A23 /* CircleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleCell.xib; sourceTree = "<group>"; };
 		5BDA133B1F58FF5300083DC1 /* SingleDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleDemoViewController.h; sourceTree = "<group>"; };
 		5BDA133C1F58FF5300083DC1 /* SingleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleDemoViewController.m; sourceTree = "<group>"; };
 		5BDA133E1F59014B00083DC1 /* MultiDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiDemoViewController.h; sourceTree = "<group>"; };
@@ -70,6 +85,7 @@
 		5B86DE351F2C8AAF005F02C5 /* CircleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5BAD45381FD7A82000501A23 /* VIews */,
 				5B86DE4D1F2C8B19005F02C5 /* Circle */,
 				5B86DE391F2C8AAF005F02C5 /* AppDelegate.h */,
 				5B86DE3A1F2C8AAF005F02C5 /* AppDelegate.m */,
@@ -80,6 +96,9 @@
 				5BDA133E1F59014B00083DC1 /* MultiDemoViewController.h */,
 				5BDA133F1F59014B00083DC1 /* MultiDemoViewController.m */,
 				5BDA13411F59016400083DC1 /* MultiDemoViewController.xib */,
+				5BAD45331FD7A6A000501A23 /* ProgressViewController.h */,
+				5BAD45341FD7A6A000501A23 /* ProgressViewController.m */,
+				5BAD45351FD7A6A000501A23 /* ProgressViewController.xib */,
 				5B86DE421F2C8AAF005F02C5 /* Assets.xcassets */,
 				5B86DE441F2C8AAF005F02C5 /* LaunchScreen.storyboard */,
 				5B86DE471F2C8AAF005F02C5 /* Info.plist */,
@@ -105,6 +124,19 @@
 				5B86DE551F2C8B66005F02C5 /* EMCircleLayerView.m */,
 			);
 			path = Circle;
+			sourceTree = "<group>";
+		};
+		5BAD45381FD7A82000501A23 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD45391FD7A83500501A23 /* ProgressCell.h */,
+				5BAD453A1FD7A83500501A23 /* ProgressCell.m */,
+				5BAD453B1FD7A83500501A23 /* ProgressCell.xib */,
+				5BAD453E1FD7C8F300501A23 /* CircleCell.h */,
+				5BAD453F1FD7C8F300501A23 /* CircleCell.m */,
+				5BAD45401FD7C8F300501A23 /* CircleCell.xib */,
+			);
+			path = VIews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +200,9 @@
 				5BDA13421F59016400083DC1 /* MultiDemoViewController.xib in Resources */,
 				5B86DE461F2C8AAF005F02C5 /* LaunchScreen.storyboard in Resources */,
 				5B86DE431F2C8AAF005F02C5 /* Assets.xcassets in Resources */,
+				5BAD45371FD7A6A000501A23 /* ProgressViewController.xib in Resources */,
+				5BAD453D1FD7A83500501A23 /* ProgressCell.xib in Resources */,
+				5BAD45421FD7C8F300501A23 /* CircleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +218,11 @@
 				5B86DE3B1F2C8AAF005F02C5 /* AppDelegate.m in Sources */,
 				5B86DE561F2C8B66005F02C5 /* EMCircleLayerView.m in Sources */,
 				5B86DE381F2C8AAF005F02C5 /* main.m in Sources */,
+				5BAD45411FD7C8F300501A23 /* CircleCell.m in Sources */,
+				5BAD453C1FD7A83500501A23 /* ProgressCell.m in Sources */,
 				5BDA13401F59014B00083DC1 /* MultiDemoViewController.m in Sources */,
 				5BDA133D1F58FF5300083DC1 /* SingleDemoViewController.m in Sources */,
+				5BAD45361FD7A6A000501A23 /* ProgressViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CircleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.CircleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CircleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroky.CircleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
